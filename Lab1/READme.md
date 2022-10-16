@@ -7,6 +7,8 @@ Report the the total numbers of elements in _L<sub>si</sub>_  for problem with N
 
 # My approach
 
+The idea of the algorithm is to take at every step the most convinient subset in the subset list. We will take the subset with 
+the highest ratio between the number of elements not covered yet and the cost of the subset itself. This algorithm doesn't always give the best solution but it gives an optimal one.
 
 There is a greedy algorithm for polynomial time approximation of set covering that chooses sets according to one rule: 
 at each stage, choose the set that contains the largest number of uncovered elements. Inapproximability results show that the greedy algorithm is essentially the best-possible polynomial time approximation algorithm for set cover up to lower order terms
